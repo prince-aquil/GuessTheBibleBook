@@ -134,7 +134,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Guess The Book" id="PnA-5d-j1L"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="bookWheel" destination="mDt-de-87p" id="Rfe-1B-Fqv"/>
