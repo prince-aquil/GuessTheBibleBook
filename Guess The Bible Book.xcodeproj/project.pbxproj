@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		4931BD281B6C5E1A005302EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4931BD271B6C5E1A005302EB /* AppDelegate.swift */; };
 		4931BD2A1B6C5E1A005302EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4931BD291B6C5E1A005302EB /* ViewController.swift */; };
-		4931BD2D1B6C5E1A005302EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4931BD2B1B6C5E1A005302EB /* Main.storyboard */; };
 		4931BD2F1B6C5E1A005302EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4931BD2E1B6C5E1A005302EB /* Images.xcassets */; };
 		4931BD321B6C5E1A005302EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4931BD301B6C5E1A005302EB /* LaunchScreen.xib */; };
 		4931BD3E1B6C5E1A005302EB /* Guess_The_Bible_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4931BD3D1B6C5E1A005302EB /* Guess_The_Bible_BookTests.swift */; };
+		4931BD831B6C7FE2005302EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4931BD811B6C7FE2005302EB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 		4931BD261B6C5E1A005302EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4931BD271B6C5E1A005302EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4931BD291B6C5E1A005302EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4931BD2C1B6C5E1A005302EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4931BD2E1B6C5E1A005302EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4931BD311B6C5E1A005302EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4931BD371B6C5E1A005302EB /* Guess The Bible BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess The Bible BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4931BD3C1B6C5E1A005302EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4931BD3D1B6C5E1A005302EB /* Guess_The_Bible_BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_The_Bible_BookTests.swift; sourceTree = "<group>"; };
+		4931BD821B6C7FE2005302EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,8 @@
 			children = (
 				4931BD271B6C5E1A005302EB /* AppDelegate.swift */,
 				4931BD291B6C5E1A005302EB /* ViewController.swift */,
-				4931BD2B1B6C5E1A005302EB /* Main.storyboard */,
+				4931BD811B6C7FE2005302EB /* Main.storyboard */,
 				4931BD2E1B6C5E1A005302EB /* Images.xcassets */,
-				4931BD301B6C5E1A005302EB /* LaunchScreen.xib */,
 				4931BD251B6C5E1A005302EB /* Supporting Files */,
 			);
 			path = "Guess The Bible Book";
@@ -90,6 +89,7 @@
 		4931BD251B6C5E1A005302EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4931BD301B6C5E1A005302EB /* LaunchScreen.xib */,
 				4931BD261B6C5E1A005302EB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,7 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4931BD2D1B6C5E1A005302EB /* Main.storyboard in Resources */,
+				4931BD831B6C7FE2005302EB /* Main.storyboard in Resources */,
 				4931BD321B6C5E1A005302EB /* LaunchScreen.xib in Resources */,
 				4931BD2F1B6C5E1A005302EB /* Images.xcassets in Resources */,
 			);
@@ -236,20 +236,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4931BD2B1B6C5E1A005302EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4931BD2C1B6C5E1A005302EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4931BD301B6C5E1A005302EB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4931BD311B6C5E1A005302EB /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		4931BD811B6C7FE2005302EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4931BD821B6C7FE2005302EB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,9 +342,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Guess The Bible Book/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Guess The Bible Book/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +414,7 @@
 				4931BD431B6C5E1A005302EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4931BD441B6C5E1A005302EB /* Build configuration list for PBXNativeTarget "Guess The Bible BookTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +423,7 @@
 				4931BD461B6C5E1A005302EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
