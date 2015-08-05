@@ -106,9 +106,6 @@ class ViewController: UIViewController, UIPickerViewDelegate {
                 tempString = tempString.substringWithRange(Range<String.Index>(start: advance(tempString.startIndex, verseNumCount+1), end: tempString.endIndex))
                 
                 verseArea.text = tempString
-                
-                println(bookName)
-                println(bookNameChapter+":"+verseNum)
             }
             
         } else {
