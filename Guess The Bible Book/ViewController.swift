@@ -14,7 +14,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     
     @IBOutlet var verseArea: UITextView!
     @IBOutlet var bookWheel: UIPickerView!
-    
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     var bookName = ""
     var guessBook = "Genesis"
     var bookNameChapter = ""
@@ -45,21 +45,27 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     
 //BUTTON ACTIONS//
     @IBAction func submitButton(sender: UIButton) {
+        activityIndicatorStart()
         if guessBook == bookName {
             AlertCreator("Correct", content: "Well done the verse was "+bookNameChapter+":"+verseNum)
             VerseChange()
         } else {
             AlertCreator("Incorrect", content: "Sorry the verse is not in "+guessBook+". Try Again")
         }
+        activityIndicatorStop()
     }
     
     @IBAction func revealButton_click(sender: AnyObject) {
+        activityIndicatorStart()
         AlertCreator("The Answer", content: "The verse was "+bookNameChapter+":"+verseNum)
         VerseChange()
+        activityIndicatorStop()
     }
     
     @IBAction func newVerse_click(sender: AnyObject) {
+        activityIndicatorStart()
          VerseChange()
+        activityIndicatorStop()
     }
 ////
     
@@ -125,7 +131,23 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func activityIndicatorStart(){
+        
+        activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge
+        self.view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+    }
 
-
+    
+    func activityIndicatorStop(){
+        activityIndicator.stopAnimating()
+        UIApplication.sharedApplication().endIgnoringInteractionEvents()
+    }
 }
 
